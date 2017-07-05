@@ -16,12 +16,15 @@ gem 'jbuilder', '~> 2.5'
 gem "trailblazer"
 gem "trailblazer-rails"
 gem "trailblazer-cells"
+gem 'tyrant'
+gem 'warden'
 gem "cells-rails"
 gem 'cells-haml'
 gem "reform", ">= 2.2.4"
 gem "reform-rails"
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'jquery-turbolinks'
+gem 'jquery-rails','>= 4.2.1'
 gem 'kaminari'
 gem 'kaminari-cells'
 

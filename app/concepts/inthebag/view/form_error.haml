@@ -1,0 +1,8 @@
+.ui.message
+  %i.ui.close.icon
+  .header Något gick fel!
+  %ul.list
+    - context[:errors].each do |error, message|
+      %li
+        %p
+          = "#{field(error)}: #{error_message(message[0])}"

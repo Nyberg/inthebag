@@ -1,0 +1,17 @@
+%h1 En inte lika ful registrering
+= form_for(model, html: {class: 'ui form'}) do |f|
+  - if context[:form].errors.messages.any?
+    = cell(Inthebag::Cell::FormError, nil, context: {errors: form.errors.messages})
+  .field
+    = f.label :username
+    = f.text_field :username
+
+  .field
+    = f.label :email
+    = f.email_field :email
+
+  .field
+    = f.label :password
+    = f.password_field :password
+
+  = f.submit "Register", class: 'ui button submit'
