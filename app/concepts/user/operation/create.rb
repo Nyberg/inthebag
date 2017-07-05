@@ -10,7 +10,6 @@ class User::Create < Trailblazer::Operation
   end
 
   def digest_user!(options, **)
-    binding.pry
     auth = Tyrant::Authenticatable.new(options["contract.default"])
     auth.digest!(options["contract.default"].password)
     auth.confirmed!

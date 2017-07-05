@@ -11,6 +11,8 @@ class UsersController < ApplicationController
 
   def create
     result = run User::Create
+    return redirect_to root_path if result.success?
+
     render cell(User::Cell::New, result['model'], context: { form: result['contract.default']})
   end
 
