@@ -20,6 +20,7 @@ gem "cells-rails"
 gem 'cells-haml'
 gem "reform", ">= 2.2.4"
 gem "reform-rails"
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'jquery-turbolinks'
 gem 'kaminari'
 gem 'kaminari-cells'
