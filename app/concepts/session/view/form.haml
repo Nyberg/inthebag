@@ -1,0 +1,8 @@
+= form_tag(login_path, class: "ui large form", method: :post) do
+  .ui
+    %h3 Logga in
+    .field
+      = email_field_tag :email
+    .field
+      = password_field_tag :password
+  = submit_tag :submit, class: "ui fluid large primary submit button", value: "Fortsätt"
